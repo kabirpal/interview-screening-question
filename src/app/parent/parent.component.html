@@ -1,0 +1,7 @@
+<h2>Parent Component (Default Change Detection)</h2>
+<p>Primitive Value: {{ primitiveData }}</p>
+<p>Non-Primitive Value: {{ nonPrimitiveData.counter }}</p>
+<button (click)="updatePrimitiveCounter()">Update Primitive Value</button>
+<button (click)="updateNonPrimitiveCounter()">Update Non-Primitive Value</button>
+<button (click)="getCounterFromService()">Get Counter from Service</button>
+<app-child [data]="nonPrimitiveData"></app-child>
